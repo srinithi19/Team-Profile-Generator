@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/srinithi19/Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "jest": "^29.4.0"
   }
 }
