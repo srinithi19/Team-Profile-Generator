@@ -2,6 +2,8 @@ const inquirer = require('inquirer');
 const Engineer = require('./lib/Engineer');
 const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
+const { createEmployeeCard } = require('./lib/renderHtml');
+
 
 //declare team object to store employees
 const team = {
@@ -123,7 +125,7 @@ function addToTeam() {
         if(answer.addPerson) {
             addEmployee();
         } else {
-            //TODO
+            createEmployeeCard(team);
         }
         
     })
